@@ -1,0 +1,142 @@
+# Created at 2023-05-14T13:09:51.574
+Exiting self fork JVM. Received SHUTDOWN command from Maven shutdown hook.
+Thread dump before exiting the process (31600@DESKTOP-CF70TGI):
+"main" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.1/java.lang.PublicMethods$Key.equals(PublicMethods.java:118)
+        at java.base@20.0.1/java.util.HashMap.getNode(HashMap.java:578)
+        at java.base@20.0.1/java.util.LinkedHashMap.get(LinkedHashMap.java:449)
+        at java.base@20.0.1/java.lang.PublicMethods.merge(PublicMethods.java:63)
+        at java.base@20.0.1/java.lang.Class.privateGetPublicMethods(Class.java:3542)
+        at java.base@20.0.1/java.lang.Class.getMethods(Class.java:2112)
+        at app//org.codehaus.groovy.reflection.stdclasses.CachedSAMClass.getSAMMethodImpl(CachedSAMClass.java:171)
+        at app//org.codehaus.groovy.reflection.stdclasses.CachedSAMClass.getSAMMethod(CachedSAMClass.java:160)
+        at app//org.codehaus.groovy.reflection.ClassInfo.isSAM(ClassInfo.java:389)
+        at app//org.codehaus.groovy.reflection.ClassInfo.createCachedClass(ClassInfo.java:379)
+        at app//org.codehaus.groovy.reflection.ClassInfo.access$300(ClassInfo.java:73)
+        at app//org.codehaus.groovy.reflection.ClassInfo$LazyCachedClassRef.initValue(ClassInfo.java:437)
+        at app//org.codehaus.groovy.reflection.ClassInfo$LazyCachedClassRef.initValue(ClassInfo.java:427)
+        at app//org.codehaus.groovy.util.LazyReference.getLocked(LazyReference.java:50)
+        at app//org.codehaus.groovy.util.LazyReference.get(LazyReference.java:37)
+        at app//org.codehaus.groovy.reflection.ClassInfo.getCachedClass(ClassInfo.java:148)
+        at app//org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95)
+        at app//org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:208)
+        at app//org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:108)
+        at app//org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:86)
+        at app//groovy.lang.GroovySystem.<clinit>(GroovySystem.java:37)
+        at app//org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:88)
+        at app//org.codehaus.groovy.runtime.ScriptBytecodeAdapter.createMap(ScriptBytecodeAdapter.java:635)
+        at app//io.restassured.internal.ResponseParserRegistrar.<init>(ResponseParserRegistrar.groovy)
+        at app//io.restassured.RestAssured.<clinit>(RestAssured.java:346)
+        at app//stepDefinations.StepDefination.add_place_payload_with(StepDefination.java:36)
+        at java.base@20.0.1/java.lang.invoke.LambdaForm$DMH/0x00000008010c8000.invokeVirtual(LambdaForm$DMH)
+        at java.base@20.0.1/java.lang.invoke.LambdaForm$MH/0x00000008010c9000.invoke(LambdaForm$MH)
+        at java.base@20.0.1/java.lang.invoke.LambdaForm$MH/0x00000008010c9400.invokeExact_MT(LambdaForm$MH)
+        at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invokeImpl(DirectMethodHandleAccessor.java:157)
+        at java.base@20.0.1/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+        at java.base@20.0.1/java.lang.reflect.Method.invoke(Method.java:578)
+        at app//cucumber.runtime.Utils$1.call(Utils.java:26)
+        at app//cucumber.runtime.Timeout.timeout(Timeout.java:16)
+        at app//cucumber.runtime.Utils.invoke(Utils.java:20)
+        at app//cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:57)
+        at app//cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+        at app//cucumber.runner.TestStep.executeStep(TestStep.java:65)
+        at app//cucumber.runner.TestStep.run(TestStep.java:50)
+        at app//cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+        at app//cucumber.runner.TestCase.run(TestCase.java:46)
+        at app//cucumber.runner.Runner.runPickle(Runner.java:50)
+        at app//io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:146)
+        at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:68)
+        at app//io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:23)
+        at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+        at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+        at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+        at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+        at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+        at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+        at app//io.cucumber.junit.Cucumber.runChild(Cucumber.java:144)
+        at app//io.cucumber.junit.Cucumber.runChild(Cucumber.java:65)
+        at app//org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+        at app//org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+        at app//org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+        at app//org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+        at app//org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+        at app//io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:174)
+        at app//org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+        at app//org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:316)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:240)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:214)
+        at app//org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:155)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+
+"Reference Handler" 
+   java.lang.Thread.State: RUNNABLE
+        at java.base@20.0.1/java.lang.ref.Reference.waitForReferencePendingList(Native Method)
+        at java.base@20.0.1/java.lang.ref.Reference.processPendingReferences(Reference.java:246)
+        at java.base@20.0.1/java.lang.ref.Reference$ReferenceHandler.run(Reference.java:208)
+
+"Finalizer" 
+   java.lang.Thread.State: WAITING
+        at java.base@20.0.1/java.lang.Object.wait0(Native Method)
+        at java.base@20.0.1/java.lang.Object.wait(Object.java:366)
+        at java.base@20.0.1/java.lang.Object.wait(Object.java:339)
+        at java.base@20.0.1/java.lang.ref.NativeReferenceQueue.await(NativeReferenceQueue.java:48)
+        at java.base@20.0.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:158)
+        at java.base@20.0.1/java.lang.ref.NativeReferenceQueue.remove(NativeReferenceQueue.java:89)
+        at java.base@20.0.1/java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:173)
+
+"Signal Dispatcher" 
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" 
+   java.lang.Thread.State: RUNNABLE
+
+"Notification Thread" 
+   java.lang.Thread.State: RUNNABLE
+
+"Common-Cleaner" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1847)
+        at java.base@20.0.1/java.lang.ref.ReferenceQueue.await(ReferenceQueue.java:71)
+        at java.base@20.0.1/java.lang.ref.ReferenceQueue.remove0(ReferenceQueue.java:143)
+        at java.base@20.0.1/java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:218)
+        at java.base@20.0.1/jdk.internal.ref.CleanerImpl.run(CleanerImpl.java:140)
+        at java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+        at java.base@20.0.1/jdk.internal.misc.InnocuousThread.run(InnocuousThread.java:186)
+
+"surefire-forkedjvm-stream-flusher" 
+   java.lang.Thread.State: TIMED_WAITING
+        at java.base@20.0.1/jdk.internal.misc.Unsafe.park(Native Method)
+        at java.base@20.0.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:269)
+        at java.base@20.0.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1758)
+        at java.base@20.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+        at java.base@20.0.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+        at java.base@20.0.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1070)
+        at java.base@20.0.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+        at java.base@20.0.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+        at java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+
+"surefire-forkedjvm-command-thread" 
+   java.lang.Thread.State: RUNNABLE
+        at java.management@20.0.1/sun.management.ThreadImpl.getThreadInfo1(Native Method)
+        at java.management@20.0.1/sun.management.ThreadImpl.getThreadInfo(ThreadImpl.java:191)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.generateThreadDump(ForkedBooter.java:579)
+        at app//org.apache.maven.surefire.booter.ForkedBooter.access$600(ForkedBooter.java:79)
+        at app//org.apache.maven.surefire.booter.ForkedBooter$4.update(ForkedBooter.java:315)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.callListeners(CommandReader.java:357)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.exitByConfiguration(CommandReader.java:367)
+        at app//org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:330)
+        at java.base@20.0.1/java.lang.Thread.runWith(Thread.java:1636)
+        at java.base@20.0.1/java.lang.Thread.run(Thread.java:1623)
+
+
+
